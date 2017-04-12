@@ -14,7 +14,6 @@
 		0C02D4221E9E14DF00523081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C02D4201E9E14DF00523081 /* LaunchScreen.storyboard */; };
 		0C02D4401E9E21D200523081 /* GroupAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4391E9E21D200523081 /* GroupAnimationController.m */; };
 		0C02D4411E9E21D200523081 /* PropertyAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D43B1E9E21D200523081 /* PropertyAnimationController.m */; };
-		0C02D4421E9E21D200523081 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D43D1E9E21D200523081 /* ViewController.m */; };
 		0C02D4481E9E238E00523081 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4471E9E238E00523081 /* MMNavigationController.m */; };
 		0C02D44B1E9E27A800523081 /* MMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D44A1E9E27A800523081 /* MMTabBarController.m */; };
 		0C02D44E1E9E27BB00523081 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D44D1E9E27BB00523081 /* BaseViewController.m */; };
@@ -34,8 +33,6 @@
 		0C02D4391E9E21D200523081 /* GroupAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationController.m; sourceTree = "<group>"; };
 		0C02D43A1E9E21D200523081 /* PropertyAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyAnimationController.h; sourceTree = "<group>"; };
 		0C02D43B1E9E21D200523081 /* PropertyAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyAnimationController.m; sourceTree = "<group>"; };
-		0C02D43C1E9E21D200523081 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C02D43D1E9E21D200523081 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0C02D4461E9E238E00523081 /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
 		0C02D4471E9E238E00523081 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
 		0C02D4491E9E27A800523081 /* MMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarController.h; sourceTree = "<group>"; };
@@ -105,8 +102,6 @@
 				0C02D4391E9E21D200523081 /* GroupAnimationController.m */,
 				0C02D43A1E9E21D200523081 /* PropertyAnimationController.h */,
 				0C02D43B1E9E21D200523081 /* PropertyAnimationController.m */,
-				0C02D43C1E9E21D200523081 /* ViewController.h */,
-				0C02D43D1E9E21D200523081 /* ViewController.m */,
 				0C02D4461E9E238E00523081 /* MMNavigationController.h */,
 				0C02D4471E9E238E00523081 /* MMNavigationController.m */,
 				0C02D4491E9E27A800523081 /* MMTabBarController.h */,
@@ -212,7 +207,6 @@
 				0C02D4411E9E21D200523081 /* PropertyAnimationController.m in Sources */,
 				0C02D4401E9E21D200523081 /* GroupAnimationController.m in Sources */,
 				0C02D4141E9E14DF00523081 /* main.m in Sources */,
-				0C02D4421E9E21D200523081 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +365,7 @@
 				0C02D4281E9E14DF00523081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

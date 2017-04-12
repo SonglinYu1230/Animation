@@ -5,14 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Property Animation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PropertyAnimationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,53 +19,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCk-dc-vzF">
-                                <rect key="frame" x="46" y="124" width="283" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="msp-u3-KTe"/>
-                                </constraints>
-                                <state key="normal" title="group animation"/>
-                                <connections>
-                                    <action selector="handleButtonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1C-VV-zOo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-1f-uk2">
-                                <rect key="frame" x="46" y="198" width="283" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="rVY-3u-flv"/>
-                                </constraints>
-                                <state key="normal" title="transition animation"/>
-                                <connections>
-                                    <action selector="handleButtonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufA-27-bfS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8Q-7c-Og8">
-                                <rect key="frame" x="46" y="50" width="283" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Mtw-63-9aJ"/>
-                                </constraints>
-                                <state key="normal" title="property animation"/>
-                                <connections>
-                                    <action selector="handleButtonEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1U-zr-rA4"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="xCk-dc-vzF" secondAttribute="trailing" constant="30" id="1zE-QQ-4XQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="L8Q-7c-Og8" secondAttribute="trailing" constant="30" id="G90-7e-0pR"/>
-                            <constraint firstItem="L8Q-7c-Og8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="K65-9x-H4j"/>
-                            <constraint firstItem="8tJ-1f-uk2" firstAttribute="top" secondItem="xCk-dc-vzF" secondAttribute="bottom" constant="30" id="OIo-cA-SkB"/>
-                            <constraint firstItem="8tJ-1f-uk2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="SUP-uL-bC6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8tJ-1f-uk2" secondAttribute="trailing" constant="30" id="aFQ-8g-bye"/>
-                            <constraint firstItem="L8Q-7c-Og8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="doj-h1-3M8"/>
-                            <constraint firstItem="xCk-dc-vzF" firstAttribute="top" secondItem="L8Q-7c-Og8" secondAttribute="bottom" constant="30" id="hjQ-uq-Vr0"/>
-                            <constraint firstItem="xCk-dc-vzF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="hpL-Fx-zNH"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="pAg-85-IIe"/>
-                    <navigationItem key="navigationItem" id="tLi-Me-AOU"/>
+                    <navigationItem key="navigationItem" title="Property Animation" id="tLi-Me-AOU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,6 +34,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DMI-Uk-Ltl" customClass="MMTabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="O3i-4r-1E8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -128,7 +85,7 @@
         <!--Transition Animation-->
         <scene sceneID="ubn-Tv-LzT">
             <objects>
-                <viewController id="9bc-JP-7iI" sceneMemberID="viewController">
+                <viewController id="9bc-JP-7iI" customClass="TransitionAnmationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2v8-4n-EL9"/>
                         <viewControllerLayoutGuide type="bottom" id="Qfg-lY-4JO"/>
@@ -162,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="1081" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Group Animation-->
         <scene sceneID="OF9-kL-YZ5">
             <objects>
-                <viewController id="5ns-oX-7TX" sceneMemberID="viewController">
+                <viewController id="5ns-oX-7TX" customClass="GroupAnimationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pvU-4u-5S3"/>
                         <viewControllerLayoutGuide type="bottom" id="OYk-9U-7Q8"/>
@@ -175,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Emx-RR-gGM"/>
+                    <navigationItem key="navigationItem" title="Group Animation" id="Emx-RR-gGM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfT-Ko-keY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
