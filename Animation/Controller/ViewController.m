@@ -25,5 +25,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)handleButtonEvent:(UIButton *)sender {
+    NSArray *vcs = @[@"PropertyAnimationController", @"GroupAnimationController", @"TransitionAnmationController"];
+    [self.navigationController pushViewController:[NSClassFromString(vcs[sender.tag]) new] animated:YES];
+}
+
 
 @end
