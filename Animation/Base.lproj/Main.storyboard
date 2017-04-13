@@ -21,12 +21,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="pAg-85-IIe"/>
                     <navigationItem key="navigationItem" title="Property Animation" id="tLi-Me-AOU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="-531"/>
+            <point key="canvasLocation" x="1844" y="-531"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fk5-5y-blH">
@@ -80,7 +79,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AF6-NH-wc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="870"/>
+            <point key="canvasLocation" x="1081" y="815"/>
         </scene>
         <!--Transition Animation-->
         <scene sceneID="ubn-Tv-LzT">
@@ -100,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmr-df-ftj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="869"/>
+            <point key="canvasLocation" x="1844" y="815"/>
         </scene>
         <!--Group Animation-->
         <scene sceneID="BNX-7u-DUO">
@@ -136,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfT-Ko-keY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982" y="138"/>
+            <point key="canvasLocation" x="1844" y="137"/>
         </scene>
     </scenes>
 </document>
