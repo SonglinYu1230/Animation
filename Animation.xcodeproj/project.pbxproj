@@ -19,6 +19,7 @@
 		0C02D44E1E9E27BB00523081 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D44D1E9E27BB00523081 /* BaseViewController.m */; };
 		0C02D4511E9E27E100523081 /* TransitionAnmationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4501E9E27E100523081 /* TransitionAnmationController.m */; };
 		0C02D45A1E9F34EA00523081 /* NavigationLiveRoomCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4591E9F34EA00523081 /* NavigationLiveRoomCountView.m */; };
+		0C02D45D1E9F6B3500523081 /* CircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */; };
 		78473A5A86F7EF87E126549F /* libPods-Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE173936FA010983BE430B5 /* libPods-Animation.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		0C02D4541E9F1BE200523081 /* Animation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animation-Prefix.pch"; sourceTree = "<group>"; };
 		0C02D4581E9F34EA00523081 /* NavigationLiveRoomCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationLiveRoomCountView.h; sourceTree = "<group>"; };
 		0C02D4591E9F34EA00523081 /* NavigationLiveRoomCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationLiveRoomCountView.m; sourceTree = "<group>"; };
+		0C02D45B1E9F6B3500523081 /* CircleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLoadingView.h; sourceTree = "<group>"; };
+		0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLoadingView.m; sourceTree = "<group>"; };
 		104CC92FAE9C9E6B3974D391 /* Pods-Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animation/Pods-Animation.release.xcconfig"; sourceTree = "<group>"; };
 		8CE173936FA010983BE430B5 /* libPods-Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B2889AC2AF1A0E3B871E67 /* Pods-Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animation/Pods-Animation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 			children = (
 				0C02D4581E9F34EA00523081 /* NavigationLiveRoomCountView.h */,
 				0C02D4591E9F34EA00523081 /* NavigationLiveRoomCountView.m */,
+				0C02D45B1E9F6B3500523081 /* CircleLoadingView.h */,
+				0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C02D4171E9E14DF00523081 /* AppDelegate.m in Sources */,
+				0C02D45D1E9F6B3500523081 /* CircleLoadingView.m in Sources */,
 				0C02D44E1E9E27BB00523081 /* BaseViewController.m in Sources */,
 				0C02D45A1E9F34EA00523081 /* NavigationLiveRoomCountView.m in Sources */,
 				0C02D44B1E9E27A800523081 /* MMTabBarController.m in Sources */,

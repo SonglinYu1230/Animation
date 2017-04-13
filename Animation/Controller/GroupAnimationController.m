@@ -28,7 +28,7 @@
         make.bottom.mas_equalTo(self.view).offset(200);
     }];
     
-    self.navigationController.hidesBarsOnSwipe = YES;
+//    self.navigationController.hidesBarsOnSwipe = YES;
 }
 
 - (void)didReceiveMemoryWarning {
