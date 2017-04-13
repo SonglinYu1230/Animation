@@ -45,7 +45,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcy-bf-OhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="202"/>
+            <point key="canvasLocation" x="316" y="191"/>
         </scene>
         <!--Property Animation-->
         <scene sceneID="7mU-jA-lcm">
@@ -79,7 +79,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AF6-NH-wc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1081" y="815"/>
+            <point key="canvasLocation" x="1081" y="783"/>
         </scene>
         <!--Transition Animation-->
         <scene sceneID="ubn-Tv-LzT">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmr-df-ftj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="815"/>
+            <point key="canvasLocation" x="1844" y="782"/>
         </scene>
         <!--Group Animation-->
         <scene sceneID="BNX-7u-DUO">
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LfT-Ko-keY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="137"/>
+            <point key="canvasLocation" x="1844" y="125"/>
         </scene>
     </scenes>
 </document>

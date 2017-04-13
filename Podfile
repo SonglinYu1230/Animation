@@ -7,5 +7,7 @@ target 'Animation' do
 
   # Pods for Animation
   pod 'Masonry’
+  pod 'YYCategories'
+  pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 
 end

@@ -42,6 +42,8 @@
 		0C02D44D1E9E27BB00523081 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		0C02D44F1E9E27E100523081 /* TransitionAnmationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnmationController.h; sourceTree = "<group>"; };
 		0C02D4501E9E27E100523081 /* TransitionAnmationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnmationController.m; sourceTree = "<group>"; };
+		0C02D4531E9F1B9B00523081 /* Consant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consant.h; sourceTree = "<group>"; };
+		0C02D4541E9F1BE200523081 /* Animation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animation-Prefix.pch"; sourceTree = "<group>"; };
 		104CC92FAE9C9E6B3974D391 /* Pods-Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animation/Pods-Animation.release.xcconfig"; sourceTree = "<group>"; };
 		8CE173936FA010983BE430B5 /* libPods-Animation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Animation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B2889AC2AF1A0E3B871E67 /* Pods-Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animation/Pods-Animation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		0C02D4111E9E14DF00523081 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0C02D4521E9F1B8300523081 /* Config */,
 				0C02D4371E9E21D200523081 /* Controller */,
 				0C02D43E1E9E21D200523081 /* Transition */,
 				0C02D43F1E9E21D200523081 /* View */,
@@ -98,6 +101,7 @@
 				0C02D41B1E9E14DF00523081 /* Main.storyboard */,
 				0C02D4201E9E14DF00523081 /* LaunchScreen.storyboard */,
 				0C02D4131E9E14DF00523081 /* main.m */,
+				0C02D4541E9F1BE200523081 /* Animation-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,6 +137,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0C02D4521E9F1B8300523081 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0C02D4531E9F1B9B00523081 /* Consant.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		4042888004FE6BFF5CB80221 /* Pods */ = {
@@ -338,6 +350,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Animation/Animation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -384,6 +398,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Animation/Animation-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

@@ -27,7 +27,6 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     CATransition *transition = [CATransition animation];
-//    transition.duration = 0.3f;
     transition.type = kCATransitionFade;
     [tabBarController.view.layer addAnimation:transition forKey:nil];
 }
