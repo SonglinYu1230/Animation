@@ -7,8 +7,11 @@
 //
 
 #import "PropertyAnimationController.h"
+#import "NavigationLiveRoomCountView.h"
 
 @interface PropertyAnimationController ()
+
+@property(nonatomic, strong) NavigationLiveRoomCountView *countView;
 
 @end
 
@@ -16,21 +19,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:kNetEaseRedColor];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+    [self configureleftBarButtonItem];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [_countView animate];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UI method
+- (void)configureleftBarButtonItem {
+    NSArray *imageNames = @[@"nav_live_room_rolling_first", @"nav_live_room_rolling_second", @"nav_live_room_rolling_third"];
+    NSMutableArray *images = [NSMutableArray new];
+    [imageNames enumerateObjectsUsingBlock:^(NSString *imageName, NSUInteger idx, BOOL * _Nonnull stop) {
+        [images addObject:[UIImage imageNamed:imageName]];
+    }];
+    _countView = [[NavigationLiveRoomCountView alloc] initWithImage:[UIImage imageNamed:@"nav_live_room_image"] animatedImages:[images copy]];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_countView];
 }
 
 @end
