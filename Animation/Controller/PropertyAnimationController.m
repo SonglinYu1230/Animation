@@ -9,6 +9,7 @@
 #import "PropertyAnimationController.h"
 #import "NavigationLiveRoomCountView.h"
 #import "CircleLoadingView.h"
+#import "MMProgressView.h"
 
 @interface PropertyAnimationController ()
 
@@ -24,10 +25,25 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithHexString:kNetEaseRedColor];
     [self configureleftBarButtonItem];
     
+    CGFloat margin = 10.f;
     // cicrle loading view
     _circleLoadingView = [[CircleLoadingView alloc] initWithFrame:CGRectMake(10, 80, 25, 25)];
     [self.view addSubview:_circleLoadingView];
     
+    MMProgressView *planetProgressView = [MMProgressView progressViewWithType:MMProgressViewTypePlanetRotation];
+    planetProgressView.frame = CGRectMake(_circleLoadingView.right + margin, _circleLoadingView.top, 144.f, 144.f);
+    [self.view addSubview:planetProgressView];
+    [planetProgressView startAnimating];
+    planetProgressView.backgroundColor = [UIColor cyanColor];
+    
+    MMProgressView *progressView = [MMProgressView progressViewWithType:MMProgressViewTypeTwoDots];
+    progressView.frame = CGRectMake(_circleLoadingView.left, _circleLoadingView.bottom + margin, 144.f, 144.f);
+    [self.view addSubview:progressView];
+    [progressView startAnimating];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [progressView stopAnimating];
+//    });
 }
 
 - (void)viewDidAppear:(BOOL)animated {

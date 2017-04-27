@@ -57,8 +57,8 @@
     
     UIBezierPath *checkMarkPath = [UIBezierPath bezierPath];
     [checkMarkPath moveToPoint:CGPointMake(0.2, 0.5)];
-    [checkMarkPath addLineToPoint:CGPointMake(0.44, 0.7)];
-    [checkMarkPath addLineToPoint:CGPointMake(0.7, 0.2)];
+    [checkMarkPath addLineToPoint:CGPointMake(0.46, 0.75)];
+    [checkMarkPath addLineToPoint:CGPointMake(0.75, 0.2)];
     checkMarkPath.lineJoinStyle = kCGLineJoinRound;
     checkMarkPath.lineCapStyle = kCGLineCapRound;
     
