@@ -20,6 +20,8 @@
 		0C02D4511E9E27E100523081 /* TransitionAnmationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4501E9E27E100523081 /* TransitionAnmationController.m */; };
 		0C02D45A1E9F34EA00523081 /* NavigationLiveRoomCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D4591E9F34EA00523081 /* NavigationLiveRoomCountView.m */; };
 		0C02D45D1E9F6B3500523081 /* CircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */; };
+		0C6DFC591F289E7100AF8AF0 /* MMDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DFC581F289E7100AF8AF0 /* MMDotsView.m */; };
+		0CBD17A31F2B286E00D97840 /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD17A21F2B286E00D97840 /* MarqueeLabel.m */; };
 		0CD6A0A71EA46FBF009F6FD4 /* MMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6A0A61EA46FBF009F6FD4 /* MMProgressView.m */; };
 		78473A5A86F7EF87E126549F /* libPods-Animation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE173936FA010983BE430B5 /* libPods-Animation.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,10 @@
 		0C02D4591E9F34EA00523081 /* NavigationLiveRoomCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationLiveRoomCountView.m; sourceTree = "<group>"; };
 		0C02D45B1E9F6B3500523081 /* CircleLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLoadingView.h; sourceTree = "<group>"; };
 		0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLoadingView.m; sourceTree = "<group>"; };
+		0C6DFC571F289E7100AF8AF0 /* MMDotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDotsView.h; sourceTree = "<group>"; };
+		0C6DFC581F289E7100AF8AF0 /* MMDotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDotsView.m; sourceTree = "<group>"; };
+		0CBD17A11F2B286E00D97840 /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
+		0CBD17A21F2B286E00D97840 /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
 		0CD6A0A51EA46FBE009F6FD4 /* MMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressView.h; sourceTree = "<group>"; };
 		0CD6A0A61EA46FBF009F6FD4 /* MMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressView.m; sourceTree = "<group>"; };
 		104CC92FAE9C9E6B3974D391 /* Pods-Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Animation/Pods-Animation.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +159,10 @@
 				0C02D45C1E9F6B3500523081 /* CircleLoadingView.m */,
 				0CD6A0A51EA46FBE009F6FD4 /* MMProgressView.h */,
 				0CD6A0A61EA46FBF009F6FD4 /* MMProgressView.m */,
+				0C6DFC571F289E7100AF8AF0 /* MMDotsView.h */,
+				0C6DFC581F289E7100AF8AF0 /* MMDotsView.m */,
+				0CBD17A11F2B286E00D97840 /* MarqueeLabel.h */,
+				0CBD17A21F2B286E00D97840 /* MarqueeLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 				TargetAttributes = {
 					0C02D40E1E9E14DF00523081 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5V3R47VQH6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -300,7 +311,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B65BD5FE2D5C77898D98A7FB /* [CP] Copy Pods Resources */ = {
@@ -331,10 +342,12 @@
 				0C02D44E1E9E27BB00523081 /* BaseViewController.m in Sources */,
 				0C02D45A1E9F34EA00523081 /* NavigationLiveRoomCountView.m in Sources */,
 				0C02D44B1E9E27A800523081 /* MMTabBarController.m in Sources */,
+				0CBD17A31F2B286E00D97840 /* MarqueeLabel.m in Sources */,
 				0C02D4481E9E238E00523081 /* MMNavigationController.m in Sources */,
 				0C02D4511E9E27E100523081 /* TransitionAnmationController.m in Sources */,
 				0C02D4411E9E21D200523081 /* PropertyAnimationController.m in Sources */,
 				0C02D4401E9E21D200523081 /* GroupAnimationController.m in Sources */,
+				0C6DFC591F289E7100AF8AF0 /* MMDotsView.m in Sources */,
 				0C02D4141E9E14DF00523081 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,11 +473,14 @@
 			baseConfigurationReference = B4B2889AC2AF1A0E3B871E67 /* Pods-Animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5V3R47VQH6;
 				INFOPLIST_FILE = Animation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.why.Animation;
+				PRODUCT_BUNDLE_IDENTIFIER = yumumu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -473,11 +489,14 @@
 			baseConfigurationReference = 104CC92FAE9C9E6B3974D391 /* Pods-Animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5V3R47VQH6;
 				INFOPLIST_FILE = Animation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.why.Animation;
+				PRODUCT_BUNDLE_IDENTIFIER = yumumu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

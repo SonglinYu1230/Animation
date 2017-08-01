@@ -1,20 +1,20 @@
 PODS:
   - Masonry (1.0.2)
-  - Reveal-iOS-SDK (1.6.2)
+  - Reveal-SDK (9)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - Masonry
-  - Reveal-iOS-SDK
+  - Reveal-SDK
   - YYCategories
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  Reveal-SDK: d977a1ec41e7c076025c1005da6e6d7c1b8ed254
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: e1b3fb26422ae10f2fd6f9208c5f6a5b7f392927
+PODFILE CHECKSUM: d65a838d815a13ac5df8208c0c55b106de5b5193
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
